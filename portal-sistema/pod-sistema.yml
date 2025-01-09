@@ -16,13 +16,13 @@ spec:
         - configMapRef: 
             name: sistema-configmap
 
-    - name: sistema-noticias-database
-      image: aluracursos/mysql-db:1
-      ports:
-        - containerPort: 3306
-      envFrom:
-        - configMapRef: 
-            name: db-configmap
+    #- name: sistema-noticias-database
+    #  image: aluracursos/mysql-db:1
+    #  ports:
+    #    - containerPort: 3306
+    #  envFrom:
+    #    - configMapRef: 
+    #        name: db-configmap
 
       # env:
       #  - name: MYSQL_ROOT_PASSWORD
